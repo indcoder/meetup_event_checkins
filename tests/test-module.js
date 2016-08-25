@@ -55,11 +55,9 @@ describe('meetup_event_checkins in online mode', function() {
     return meetup_api('<Add your acesss token here>', '<Meetup Event id with known no. of checkins>').should.eventually.have.length('known no of checkins') ;
 
   });
-  it('should return an error if it cannot connect to meetup.com', (done)=>{
-  //result.should.eventually.error  
-    done();
-
-  } );
+  it('should return an error if it cannot connect to meetup.com', function(){
+    return meetup_api('dee89d2da457730bd93f95bbe3e3de6f', '229152961').should.be.rejectedWith("getaddrinfo ENOTFOUND") ;
+  }  );
   it('should return an error if wrong input was entered as parameter', function(){
           this.timeout(8000);
           return meetup_api('dee89d2da457730bd93f95bbe3e3de6f', '229152961').should.be.rejectedWith("401") ;

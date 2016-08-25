@@ -33,6 +33,8 @@
     "sinon-chai": "2.8.0"
   },
   "dependencies": {
-    "bluebird": "3.4.1"
+    "bluebird": "3.4.1",
+    "debug": "2.2.0",
+    "lugg": "1.1.2"
   }
 }

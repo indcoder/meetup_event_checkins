@@ -1,6 +1,6 @@
 {
   "name": "meetup_event_checkins",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This nodejs npm module will return the attendees that are checked in by the event manager for a Meetup.com event.",
   "main": "index.js",
   "scripts": {

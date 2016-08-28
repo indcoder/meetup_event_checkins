@@ -4,8 +4,8 @@
   "description": "This nodejs npm module will return the attendees that are checked in by the event manager for a Meetup.com event.",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha --reporter spec -u exports tests/*" ,
-    "cover": "cover mocha -- -R spec tests/*"
+    "test": "node_modules/.bin/mocha --reporter spec -u exports tests/*",
+    "cover": "istanbul cover mocha -- -R spec tests/*"
   },
   "engines": {
     "node": "6.2.0"
@@ -37,7 +37,6 @@
   },
   "dependencies": {
     "bluebird": "3.4.1",
-    "debug": "2.2.0",
-    "lugg": "1.1.2"
+    "debug": "2.2.0"
   }
 }

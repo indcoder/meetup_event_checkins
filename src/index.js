@@ -42,6 +42,7 @@ module.exports = function(accessToken, eventID) {
                                         
                 })
                 .catch(function(error){
+                        console.error('Error thrown by meetup-checkin-module ' + error);
                         throw new Error(error);
                 });
 };

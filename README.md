@@ -1,3 +1,26 @@
 # meetup_event_checkins
-This nodejs npm module will return the attendees that are checked in by the event manager for a Meetup.com event.
+===========
+
+A small nodejs npm module that returns the attendees that have checked in by the event manager for a Meetup.com event.
+
+
+## Installation
+
+  `npm install meetup_event_checkins`
+
+## Usage
+
+    var meetupAPI = require('meetup_event_checkins');
+
+  
+  Output will be an array of attendees[Meetup API] object 
+
+
+## Tests
+
+  `npm test`
+
+## Contributing
+
+In lieu of a formal style guide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code.
 

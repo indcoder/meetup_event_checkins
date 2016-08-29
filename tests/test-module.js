@@ -251,14 +251,14 @@ describe('meetup_event_checkins in online mode', function() {
                 "lat": ""
             }
         }
-      const response = new PassThrough();
+    const response = new PassThrough();
 	    response.write(JSON.stringify(expected));
 	    response.end();
       
  
-	    const get = new PassThrough();
+	const get = new PassThrough();
  
-	    this.get.callsArgWith(1, response)
+    this.get.callsArgWith(1, response)
 	            .returns(get);
 
 
@@ -276,11 +276,11 @@ describe('meetup_event_checkins in online mode', function() {
     
   });
   it('should return an error if wrong input was entered as parameter', function(){
-          this.timeout(8000);
-          var unauthorized_error = new Error("not_authorized");
-          this.get.throws(unauthorized_error);
+        this.timeout(8000);
+        
+        this.get.yields({statusCode:401});  
 
-          return meetup_api('dee89d2da457730bd93f95bbe3e3de6f', '229152961').should.be.rejectedWith("not_authorized") ;
+        return meetup_api('dee89d2da457730bd93f95bbe3e3de6f', '229152961').should.be.rejectedWith("401") ;
 
   });
 });

@@ -34,12 +34,9 @@ module.exports = function(accessToken, eventID) {
                 })
                 .then(attendees => {
                         debug('Attendees received in filter ' + attendees);
-                        if(attendees) {
-                                return attendees.filter((attendee) => {
+                        return attendees.filter((attendee) => {
                                         return attendee.attendance_status === 'attended';
-                                });
-                        }  
-                                        
+                        });
                 })
                 .catch(function(error){
                         console.error('Error thrown by meetup-checkin-module ' + error);

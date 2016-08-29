@@ -24,3 +24,6 @@ A small nodejs npm module that returns the attendees that have checked in by the
 
 In lieu of a formal style guide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code.
 
+
+[![Coverage Status](https://coveralls.io/repos/github/indcoder/meetup_event_checkins/badge.svg?branch=master)](https://coveralls.io/github/indcoder/meetup_event_checkins?branch=master)
+

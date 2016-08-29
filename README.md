@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/indcoder/meetup_event_checkins.svg?branch=master)](https://travis-ci.org/indcoder/meetup_event_checkins)
-
 [![Coverage Status](https://coveralls.io/repos/github/indcoder/meetup_event_checkins/badge.svg?branch=master)](https://coveralls.io/github/indcoder/meetup_event_checkins?branch=master)
+[![Code Climate](https://codeclimate.com/github/indcoder/meetup_event_checkins/badges/gpa.svg)](https://codeclimate.com/github/indcoder/meetup_event_checkins)
+[![David](https://david-dm.org/indcoder/meetup_event_checkins.svg)]()
 
 # meetup_event_checkins
 ===========

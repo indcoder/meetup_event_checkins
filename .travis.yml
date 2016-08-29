@@ -12,3 +12,8 @@ script:
 
 # Send coverage data to Coveralls
 after_script: "cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js"
+
+addons:
+    code_climate:
+        repo_token: b66e4c1554ad6f5c3f672bbf5b809b0b6c4e18b285337d63047bedfb2f0b834b
+
